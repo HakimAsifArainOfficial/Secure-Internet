@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حکیم آصف آرائیں آفیشل - Secure Internet</title>
+    <style>
+        :root {
+            --primary-color: #0f5132;
+            --secondary-color: #198754;
+            --dark-bg: #212529;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .ads-slot {
+            width: 320px;
+            height: 50px;
+            background-color: #e9ecef;
+            border: 1px dashed #ced4da;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #6c757d;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .dashboard-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .dashboard-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .search-box {
+            display: flex;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 30px;
+            overflow: hidden;
+            border: 1px solid #ced4da;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .search-box button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .main-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .video-section h2 {
+            color: var(--dark-bg);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .video-title {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .ai-assistant {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-color);
+            height: fit-content;
+        }
+
+        .ai-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .ai-chat-space {
+            background-color: #f1f3f5;
+            height: 150px;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 13px;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ads-slot">320×50 Advertisement Slot</div>
+
+    <header>
+        <div class="logo-section">
+            <h1>حکیم آصف آرائیں آفیشل</h1>
+        </div>
+        <button class="dashboard-btn" id="dashBtn">ڈیش بورڈ ☰</button>
+    </header>
+
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="urlInput" placeholder="سرچ انجن کا نام یا ویب سائٹ کا پتہ (URL) لکھیں...">
+            <button onclick="openWebsite()">کھولیں</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        
+        <div class="video-section">
+            <h2>تازہ ترین ویڈیوز</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">YouTube Video</div>
+                    <div class="video-title">معدے اور جگر کی گرمی کا آسان دیسی علاج</div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">YouTube Video</div>
+                    <div class="video-title">خالص جڑی بوٹیوں سے وزن کم کرنے کا طریقہ</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ai-assistant">
+            <div class="ai-title">حکیم اے آئی اسسٹنٹ 🤖</div>
+            <div class="ai-chat-space">
+                السلام علیکم! میں آپ کا ڈیجیٹل طبیب اور اسسٹنٹ ہوں۔ اس ایپ کو استعمال کرنے یا حکمت کے نسخوں کے بارے میں مجھ سے رہنمائی لیں۔
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ads-slot" style="margin-top: 40px;">320×50 Advertisement Slot</div>
+
+    <script>
+        function openWebsite() {
+            var input = document.getElementById('urlInput').value.trim();
+            if (input) {
+                if (!input.startsWith('http://') && !input.startsWith('https://')) {
+                    window.open('https://google.com' + encodeURIComponent(input), '_blank');
+                } else {
+                    window.open(input, '_blank');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
